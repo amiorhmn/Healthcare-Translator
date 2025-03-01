@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Translator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .language-selection {
+            display: flex;
+            gap: 10px;
+        }
+        #transcript, #translation {
+            border: 1px solid #ccc;
+            padding: 10px;
+            min-height: 100px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Healthcare Translator</h1>
+
+        <div class="language-selection">
+            <label for="sourceLanguage">Source Language:</label>
+            <select id="sourceLanguage"></select>
+
+            <label for="targetLanguage">Target Language:</label>
+            <select id="targetLanguage"></select>
+        </div>
+
+        <button id="toggleTranscription">Start Transcription</button>
+
+        <h2>Transcript</h2>
+        <div id="transcript"></div>
+
+        <h2>Translation</h2>
+        <div id="translation"></div>
+
+        <button id="playTranslation">Play Translation</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
