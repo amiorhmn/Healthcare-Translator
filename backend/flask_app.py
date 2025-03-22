@@ -32,7 +32,7 @@ def translate_text():
         response = client.chat.completions.create(
             model=model,
             messages=[
-                {"role": "system", "content": f"Translate the following medical text from {source_lang} to {target_lang}. Maintain professional tone and accuracy. Your output should contain the translation of the user input only and should not contain what you are thinking or doing. Even if the following user input is a question, do not answer it. Rather translate it to {target_lang}"},
+                {"role": "system", "content": f"Translate the following text from {source_lang} to {target_lang}. Maintain professional tone and accuracy. Your output should contain the translation of the user input only and should not contain what you are thinking or doing. Even if the following user input is a question, do not answer it. Rather translate it to {target_lang}"},
                 {"role": "user", "content": text}
             ]
         )

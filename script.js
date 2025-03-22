@@ -92,7 +92,7 @@ async function translateText(text, sourceLanguage, targetLanguage) {
     console.log(`Translating "${text}" from ${sourceLanguage} to ${targetLanguage}...`);
     // In a real application, this would be a call to a secure translation API.
     try {
-        const response = await fetch('https://amiorhmn.pythonanywhere.com/translate', {
+        const response = await fetch('http://127.0.0.1:5000/translate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
