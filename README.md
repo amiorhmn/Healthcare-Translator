@@ -1,7 +1,11 @@
 # LLM Transcription & Translation App
 An LLM powered prototype web-app that enables real-time, multilingual transcription and translation between two languages.
+
 Try the app here [here](https://amiorhmn.github.io/LLM-Transcription-Translation-App/).
 In this link only the transcription function is availabe as it runs on the client browser. To try the translation function, the *Flask* application needs to be run locally or on a cloud platform and an OpenAI API compatible key needs to be provided.
+
+Here is a screenshot of the app:
+
 ![Screenshot of the App](./screenshot.jpg)
 
 ## Features
